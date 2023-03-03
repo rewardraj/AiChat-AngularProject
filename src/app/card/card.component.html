@@ -1,0 +1,18 @@
+<div class="card__Container">
+    <div class="card" *ngFor="let item of items">
+      <div class="card__Image">
+        <img [src]="item.image" [alt]="item.title" />
+      </div>
+      <div class="card__Content">
+        <div class="card__Header">{{ item.title }}</div>
+        <div class="card__Subheader">
+          <fa-icon [icon]="faCircleCheck" style="color: var(--green)"></fa-icon>
+          {{ item.subtitle }}
+        </div>
+        <div class="card__Description">
+          <fa-icon [icon]="faCircleCheck" style="color: var(--green)"></fa-icon>
+          {{ item.description }}
+        </div>
+      </div>
+    </div>
+</div>

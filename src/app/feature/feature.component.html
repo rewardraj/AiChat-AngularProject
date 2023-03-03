@@ -1,0 +1,103 @@
+<div class="feature">
+  <h3 class="feature__TitleMain">
+    {{ title }} <br />
+    {{ titleSub }}
+  </h3>
+
+  <app-card
+    [items]="[
+      {
+        image: '../../assets/images/social1.jpeg',
+        title: 'Power up your marketing strategy',
+        subtitle: 'Personalize your customer experience',
+        description: 'Engage customers accross multiple channels'
+      },
+      {
+        image: '../../assets/images/social2-coins.jpeg',
+        title: 'Boost your customer sales strategy',
+        subtitle: 'Scalable efforts with minimal employee',
+        description: 'Generate and qualify leads automatically'
+      },
+      {
+        image: '../../assets/images/social3-chat.jpeg',
+        title: 'Optimized customer service support',
+        subtitle: 'Keep your customer support for longer hours',
+        description: 'Improve resolution times.'
+      }
+    ]"
+  >
+  </app-card>
+
+  <!-- feature mid section -->
+
+  <div class="feature__Next">
+    <div class="first__Mid">
+      <div class="image__Wrapper right">
+        <img [src]="featureImage1" style="height: 450px; width: 500px;" />
+
+        <div class="first">
+          oi
+          <fa-icon [icon]="faArrowRight" style="font-size: 14px"></fa-icon>
+          holla
+          <fa-icon [icon]="faArrowRight" style="font-size: 14px"></fa-icon> hi
+        </div>
+        <div class="second">😍 &nbsp; 🤝 &nbsp; 😊 &nbsp; 🫶</div>
+        <div class="third">
+          <del>Artif<span style="color: red">es</span>ial</del> Artificial
+        </div>
+        <div class="fourth">🎤 &nbsp; voice chat</div>
+      </div>
+
+      <div class="content__Wrapper left">
+        <div class="text__Handler">
+          <h2
+            class="section__title"
+            style="font-size: 2.5rem; font-weight: 600"
+          >
+            {{ featureTitle1 }}
+          </h2>
+          <p
+            style="
+              font-size: var(--font-size-large);
+              line-height: 2;
+              color: var(--text-secondary);
+            "
+          >
+            {{ featureDescription1 }}
+          </p>
+        </div>
+        <div class="button__Manager">
+          <button class="btn__Radius">{{ buttonText1 }}</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="first__Mid">
+      <div class="content__Wrapper item1">
+        <div class="text__Handler">
+          <h2
+            class="section__title"
+            style="font-size: 2.5rem; font-weight: 600"
+          >
+            {{ featureTitle2 }}
+          </h2>
+          <p
+            style="
+              font-size: var(--font-size-large);
+              line-height: 2;
+              color: var(--text-secondary);
+            "
+          >
+            {{ featureDescription1 }}
+          </p>
+        </div>
+        <div class="button__Manager">
+          <button class="btn__Radius">{{ buttonText1 }}</button>
+        </div>
+      </div>
+      <div class="image__Wrapper item2">
+        <img [src]="featureImage2" style="height: 450px; width: 500px;" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+
+  /* text colors */
+  --text-primary: #f9f9fa;
+  --text-secondary: #a8b5bd;
+  --text-dark: #001433;
+
+  /* background colors */
+  --background-primary: #001d41;
+  --background-secondary: #14202f;
+  --hero-bg-fallback: #0a3f7d;
+  --linear-gradient-primary: linear-gradient(70deg, #0a3f7d 0%, #14202f 100%);
+
+  /* button colors */
+  --button-primary: #018af4;
+  --button-secondary: #ffa401;
+
+  /* other colors */
+  --white: #fff;
+  --green: #50c27f;
+  --blue: #0283e9;
+  --aqua: #e6f6ff;
+  --yellow: #ffa401;
+
+  /* line heights */
+  --line-height-default: 1;
+  --line-height-small: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 2;
+
+  /* padding and spacing */
+  --navbar-height: 5rem;
+  --padding-small: 0.5rem;
+  --padding-sm: 0.8rem;
+  --padding-medium: 1rem;
+  --padding-large: 2rem;
+  --padding-gutter: 4rem;
+  --padding-whitespace: 6rem;
+  --padding-macro: 10rem;
+
+  /* border radius */
+  --border-radius-small: 0.25rem;
+  --border-radius-medium: 0.5rem;
+  --border-radius-large: 0.75rem;
+  --border-radius-whitespace: 1rem;
+  --border-radius-macro: 2rem;
+
+  /* text sizes */
+  --font-size-xxsmall: 0.625rem;
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.125rem;
+  --font-size-bleed: 1.8rem;
+  --font-size-gutter: 3rem;
+  --font-size-whitespace: 4.5rem;
+  --font-size-macro: 6rem;
+
+
+}
+
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,117 @@
+.feature {
+  background: #f2f5fe;
+}
+
+.feature__TitleMain {
+  text-align: center;
+  padding-top: var(--padding-whitespace);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.first__Mid {
+  min-height: 75vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: var(--padding-medium) var(--padding-small) 0;
+  width: 100%;
+}
+
+
+.content__Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 var(--padding-medium);
+  justify-content: center;
+  max-width: 515px;
+}
+
+.text__Handler {
+  flex-direction: column;
+  display: flex;
+  gap: 40px;
+}
+
+.right {
+  position: relative;
+}
+.rect__Wrapper {
+  position: absolute;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  width: max-content;
+  background: #fff;
+  padding: 10px 35px;
+  border-radius: 10px;
+  color: #111;
+  font-size: 20px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+.first {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+
+}
+
+.second {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
+.third {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+}
+
+.fourth {
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+}
+
+.image__Wrapper img {
+  object-fit: contain;
+  border: none;
+}
+
+
+.btn__Radius {
+  padding: var(--padding-sm) var(--padding-medium);
+  border-radius: 25px;
+  border: 0.5px solid;
+  background: transparent;
+  cursor: pointer;
+}
+.btn__Radius:hover {
+  background: var(--button-secondary);
+  color: var(--text-primary);
+}
+
+@media (width <= 768px) {
+  .content__Wrapper {
+    display: flex;
+    place-items: center;
+    /* padding: 0 var(--padding-medium); */
+  }
+
+  .item2 {
+    order: 1;
+  }
+  .item1 {
+    order: 2;
+  }
+}
+

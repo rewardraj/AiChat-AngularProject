@@ -1,0 +1,88 @@
+.hero {
+  background: var(--linear-gradient-primary);
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--padding-large);
+
+}
+
+.hero__Text {
+  text-align: center;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.hero__Intro{
+  font-size: var(--font-size-gutter);
+  line-height: var(--line-height-md);
+  color: var(--text-primary);
+  padding: var(--padding-sm);
+}
+.hero__Intro .span {
+  color: var(--yellow);
+}
+
+.hero__Subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-large);
+}
+
+.label {
+  display: flex;
+  gap: var(--padding-small);
+  flex-wrap: wrap;
+}
+
+.label input[type="text"] {
+  width: 400px;
+  padding: 0 var(--padding-large);
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  align-items: center;
+  font-size: var(--font-size-small);
+}
+
+.label button[type="submit"] {
+    padding: var(--padding-sm) var(--padding-large);
+    background-color: var(--button-secondary);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius-macro);
+    font-size: 18px;
+}
+
+.label button[type="submit"]:hover {
+  background: transparent;
+  border: 0.5px solid;
+}
+
+.catch {
+  color: var(--text-primary);
+  font-size: var(--font-size-medium);
+  font-weight: 300;
+  display: flex;
+  gap: var(--padding-large);
+}
+
+
+@media (width <= 768px) {
+  .label {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-large);
+    justify-content: center;
+  }
+
+  .label input[type="text"] {
+    padding: var(--padding-sm) var(--padding-large);
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    text-align: center;
+    font-size: var(--font-size-small);
+  }
+}
